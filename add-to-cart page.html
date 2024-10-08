@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>stepify</title>
+    <!--css1-->
+    <link rel="stylesheet" href="style.css" />
+    <!--css1-->
+    <link rel="stylesheet" href="productstyle.css" />
+    <!--font awosome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--brand logo-->
+    <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia"
+    />
+  </head>
+  <body>
+    <div class="b-t">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>Top
+      </button>
+    </div>
+    <div class="contact-link-btn">
+      <div class="sub-circle-m">
+        <a
+          href="https://web.whatsapp.com/send?phone=923458963222"
+          target="_blank"
+          rel="nofollow"
+          title="whatsapp"
+          ><i class="fa sub-circle fa-whatsapp" aria-hidden="true"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/stepi_fy"
+          target="_blank"
+          rel="unfollow"
+          title="instagram"
+          ><i class="fa sub-circle fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a
+          aria-label="qcb-mail-channel"
+          data-channel="mail"
+          href="mailto:customersupport@unze.com.pk"
+          target=""
+          rel="nofollow"
+          title="E-mail"
+          ><i class="fa sub-circle fa-envelope-o" aria-hidden="true"></i
+        ></a>
+        <a
+          href="tel:042111118693"
+          target=""
+          rel="nofollow"
+          aria-label="qcb-phone-channel"
+          data-channel="phone"
+          title="phone"
+          ><i class="fa sub-circle fa-phone" aria-hidden="true"></i
+        ></a>
+      </div>
+      <div class="main-circle">
+        <i class="fa fa-commenting show-icon" aria-hidden="true"></i>
+        <i class="fa fa-times cross-icon" aria-hidden="true"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="top-nav">
+        <nav class="navbar">
+          <div class="sub-navs">
+            <div class="subnav">
+              <button
+                onclick="toggleDropdown('container1')"
+                id="b1"
+                class="dd-btn"
+              >
+                WOMENS<span></span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div class="container" id="container1">
+                <video autoplay loop muted plays-inline class="bg-video">
+                  <source
+                    src="bannars/videos/0805.mp4"
+                    autoplay
+                    loop
+                    muted
+                    plays-inline
+                  />
+                </video>
+                <div class="sub-items" id="sub-items1">
+                  <a href="w-view all.html">VIEW ALL</a>
+                  <a href="w-sandle.html">SANDLE</a>
+                  <a href="w-slippers.html">SLIPPERS</a>
+                  <a href="w-shoe.html">SHOES</a>
+                  <a href="w-comfort.html">COMFORT</a>
+                  <a href="w-khussa.html">KHUSSA</a>
+                </div>
+              </div>
+            </div>
+            <div class="subnav">
+              <button onclick="toggleDropdown('container2')" class="dd-btn">
+                MENS<span></span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div class="container" id="container2">
+                <video autoplay loop muted plays-inline class="bg-video">
+                  <source src="bannars/videos/2.mp4" type="video/mp4" />
+                </video>
+                <div class="sub-items" id="sub-items2">
+                  <a href="m-view all.html">VIEW ALL</a>
+                  <a href="m-sandle.html">SANDLE</a>
+                  <a href="m-peshaweri.html">PESHAWARI</a>
+                  <a href="m-slipper.html">SLIPERS</a>
+                  <a href="m-moccasins.html">MOCCASINS</a>
+                  <a href="m-formals.html">FORMALS</a>
+                  <a href="m-trainers.html">TRAINERS</a>
+                </div>
+              </div>
+            </div>
+            <div class="subnav">
+              <button onclick="toggleDropdown('container3')" class="dd-btn">
+                KIDS<span></span
+                ><i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div class="container" id="container3">
+                <video autoplay loop muted plays-inline class="bg-video">
+                  <source src="bannars/videos/3.mp4" type="video/mp4" />
+                </video>
+                <div class="sub-items" id="sub-items3">
+                  <h2>GIRLS</h2>
+                  <a href="k-g-view all.html">VIEW ALL</a>
+                  <a href="k-g-sandle.html">SANDLE</a>
+                  <a href="k-g-slippers.html">SLIPPERS</a>
+                  <a href="k-g-moccasins.html">MOCCASINS</a>
+                </div>
+                <div class="sub-items" id="sub-items3">
+                  <h2>BOYS</h2>
+                  <a href="k-b-view all.html">VIEW ALL</a>
+                  <a href="k-b-shoe.html">SHOES</a>
+                  <a href="k-b-moccasian.html">MOCCASINS</a>
+                  <a href="k-b-trainer.html">TRAINERS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logo"><img id="brand-logo" src="logo/logo.png" /></div>
+          <div class="search-login-cart">
+            <div class="search">
+              <input
+                id="search-bar"
+                type="text"
+                placeholder="Search Our Store"
+              />
+              <button id="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="login-cart">
+              <a id="login" href="pages/footer pages/My Account.html">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </a>
+              <div class="add-to-cart-container">
+                <a>
+                  <i
+                    id="cart"
+                    class="fa fa-shopping-cart"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <span>0</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-Accessibility">
+      <h1>add to cart</h1>
+      <p>Your cart is Empty</p>
+    </main>
+    <section class="news-letter-section">
+      <div class="Newsletter">
+        <img
+          id="nl-logo"
+          src="logo/WhatsApp Image 2024-08-04 at 11.07.10_344440d2.jpg"
+        />
+        <a id="nl-pagel" href="pages/sign-up page.html">Newsletter sign-up</a>
+        <h6 class="newsletterd"><sup>*</sup>Indicate a required fields</h6>
+        <h2 class="newsletterd">Email Adress</h2>
+        <div class="newsletterd" id="nl-in-n">
+          <input id="input" type="email" placeholder="enter your mail" />
+          <button id="input-btn">&#8594;</button>
+        </div>
+
+        <div class="newsletterd" id="media-links">
+          <a href="https://www.instagram.com/stepi_fy"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=61561858725159&mibextid=ZbWKwL"
+            ><i class="fa fa-facebook-square" aria-hidden="true"></i
+          ></a>
+          <a href="https://youtube.com/@stepify.com12?si=cIvwtXOqOQg6nxD9"
+            ><i class="fa fa-youtube-square" aria-hidden="true"></i
+          ></a>
+          <a href="https://pin.it/7DqUJ0IGH"
+            ><i class="fa fa-pinterest-square" aria-hidden="true"></i
+          ></a>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <footer>
+      <section id="footer-menu">
+        <div class="footermenuheadings" id="customer-help">
+          <h1>customer help</h1>
+          <a href="contact us.html">contact us</a>
+          <a href="Delivery inf.html">Shipping Information</a>
+          <a href="parivacy policy.html">Privacy Policy</a>
+          <a href="Faq.html">FAQ's</a>
+          <a href="careers.html">Careers</a>
+        </div>
+        <div class="footermenuheadings" id="customer service">
+          <h1>customer service</h1>
+          <a href="location.html">Store location</a>
+          <a href="Cheak order.html">Cheak your order Status</a>
+          <a href="return policy.html">Return Policy</a>
+          <a href="My Account.html">My Account</a>
+          <a href="feedback.html">Share your Feedback</a>
+          <a href="help page.html">Help</a>
+        </div>
+        <div class="footermenuheadings" id="Useful-info">
+          <h1>Useful info</h1>
+          <a href="about-us page.html">About Us</a>
+          <a href="promotions.html">Promotions</a>
+          <a href="paywith.html">Pay with Credit/Debit card</a>
+          <a href="ordertraking.html">Order Tranking Status</a>
+          <a href="ordder cancel.html">Order Cancellation</a>
+        </div>
+        <div class="footermenuheadings" id="More">
+          <h1>More</h1>
+          <a href="Subscribe to mail.html">Subscribe TO E-Mail</a>
+          <a href="cookies.html">Cookies</a>
+          <a href="Acciesiblty.html">Accessibility</a>
+          <a href="bolgs.html">Blogs</a>
+        </div>
+      </section>
+      <section class="footer-Responsive-menu">
+        <div class="accordion">
+          <div class="item">
+            <div class="visible-div">
+              <h2>customer help</h2>
+              <div class="iconOpen">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+  
+              </div>
+              <div class="iconClose">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="hidden-box">
+              <div class="r-footer-menu">
+                <a class="r-footer-menu-i" href="contact us.html">contact us</a>
+                <a class="r-footer-menu-i" href="Delivery inf.html">Shipping Information</a>
+                <a class="r-footer-menu-i" href="parivacy policy.html">Privacy Policy</a>
+                <a class="r-footer-menu-i" href="Faq.html">FAQ's</a>
+                <a class="r-footer-menu-i" href="careers.html">Careers</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="item">
+            <div class="visible-div">
+              <h2>customer service</h2>
+              <div class="iconOpen">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+  
+              </div>
+              <div class="iconClose">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="hidden-box">
+              <div class="r-footer-menu">
+                <a class="r-footer-menu-i" href="location.html">Store location</a>
+                <a class="r-footer-menu-i" href="Cheak order.html">Cheack Order Status</a>
+                <a class="r-footer-menu-i" href="return policy.html">Return Policy</a>
+                <a class="r-footer-menu-i" href="My Account.html">My Account</a>
+                <a class="r-footer-menu-i" href="feedback.html">Share your Feedback</a>
+                <a class="r-footer-menu-i" href="help page.html">Help</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="item">
+            <div class="visible-div">
+              <h2>Useful info</h2>
+              <div class="iconOpen">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </div>
+              <div class="iconClose">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="hidden-box">
+              <div class="r-footer-menu">
+                <a href="about-us page.html">About Us</a>
+                <a href="promotions.html">Promotions</a>
+                <a href="paywith.html">Pay with Credit/Debit card</a>
+                <a href="ordertraking.html">Order Tranking Status</a>
+                <a href="ordder cancel.html">Order Cancellation</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="visible-div">
+              <h2>More</h2>
+              <div class="iconOpen">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+  
+              </div>
+              <div class="iconClose">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="hidden-box">
+              <div class="r-footer-menu">
+                <a href="Subscribe to mail.html">Subscribe TO E-Mail</a>
+                <a href="cookies.html">Cookies</a>
+                <a href="Acciesiblty.html">Accessibility</a>
+                <a href="bolgs.html">Blogs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

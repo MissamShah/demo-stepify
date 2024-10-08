@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stepify</title>
+     <!--css1-->
+     <link rel="stylesheet" href="style.css" />
+     <!--css2-->
+     <link rel="stylesheet" href="style2.css" />
+     <!--font awosome icon cdn-->
+     <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+     />
+     <!--brand logo-->
+     <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="b-t">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa fa-angle-double-up" aria-hidden="true"></i>Top
+        </button>
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+      </div>
+      <header class="header">
+        <nav class="navbar">
+          <div class="sub-navs">
+            <div class="subnav">
+              <button
+                onclick="toggleDropdown('container1')"
+                id="b1"
+                class="dd-btn"
+              >
+                WOMENS<span></span><i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div class="container" id="container1">
+                <video autoplay loop muted plays-inline class="bg-video">
+                  <source src="bannars/videos/0805.mp4" type="video/mp4" />
+                </video>
+                <div class="sub-items" id="sub-items1">
+                  <a href="pages/product pages/womens/view all.html">VIEW ALL</a>
+                  <a href="pages/product pages/womens/sandle.html">SANDLE</a>
+                  <a href="pages/product pages/womens/slippers.html">SLIPPERS</a>
+                  <a href="pages/product pages/womens/shoe.html">SHOES</a>
+                  <a href="pages/product pages/womens/comfort.html">COMFORT</a>
+                  <a href="pages/product pages/womens/khussa.html">KHUSSA</a>
+                </div>
+              </div>
+            </div>
+            <div class="subnav">
+              <button onclick="toggleDropdown('container2')" class="dd-btn">
+                MENS<span></span><i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div class="container" id="container2">
+                <video autoplay loop muted plays-inline class="bg-video">
+                  <source src="bannars/videos/2.mp4" type="video/mp4" />
+                </video>
+                <div class="sub-items" id="sub-items2">
+                  <a href="pages/product pages/mens/view all.html">VIEW ALL</a>
+                  <a href="pages/product pages/mens/sandle.html">SANDLE</a>
+                  <a href="pages/product pages/mens/peshaweri.html">PESHAWARI</a>
+                  <a href="pages/product pages/mens/slipper.html">SLIPERS</a>
+                  <a href="pages/product pages/mens/moccasins.html">MOCCASINS</a>
+                  <a href="pages/product pages/mens/formals.html">FORMALS</a>
+                  <a href="pages/product pages/mens/trainers.html">TRAINERS</a>
+                </div>
+              </div>
+            </div>
+            <div class="subnav">
+              <button onclick="toggleDropdown('container3')" class="dd-btn">
+                KIDS<span></span><i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+              <div class="container" id="container3">
+                <video autoplay loop muted plays-inline class="bg-video">
+                  <source src="bannars/videos/3.mp4" type="video/mp4" />
+                </video>
+                <div class="sub-items" id="sub-items3">
+                  <h2>GIRLS</h2>
+                  <a href="pages/product pages/kids/girls/view all.html"
+                    >VIEW ALL</a
+                  >
+                  <a href="pages/product pages/kids/girls/sandle.html">SANDLE</a>
+                  <a href="pages/product pages/kids/girls/slippers.html"
+                    >SLIPPERS</a
+                  >
+                  <a href="pages/product pages/kids/girls/moccasins.html"
+                    >MOCCASINS</a
+                  >
+                </div>
+                <div class="sub-items" id="sub-items3">
+                  <h2>BOYS</h2>
+                  <a href="pages/product pages/kids/boys/view all.html"
+                    >VIEW ALL</a
+                  >
+                  <a href="pages/product pages/kids/boys/shoe.html">SHOES</a>
+                  <a href="pages/product pages/kids/boys/moccasian.html"
+                    >MOCCASINS</a
+                  >
+                  <a href="pages/product pages/kids/boys/trainer.html"
+                    >TRAINERS</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logo"><img id="brand-logo" src="logo/logo.png" /></div>
+          <div class="search-login-cart">
+            <div class="search">
+              <input id="search-bar" type="text" placeholder="Search Our Store" />
+              <button id="search-btn">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="login-cart">
+              <a id="login" href="pages/footer pages/My Account.html">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              </a>
+              <a>
+                <i id="cart" class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="main-contact">
+        <section id="contacts-hero-section">
+            <div class="contacts-hero">
+              <h1>Login To Stepify</h1>
+            </div>
+            <div class="back-to-home">
+              <div class="back-to-home-links">
+                <a href="index.html">Home</a>
+                <a href="#">/login</a>
+              </div>
+            </div>
+          </section>
+          <section>
+        <div>
+            <form class="login-form">
+                <div class="input-field">
+                    <input type="text" required spellcheck="false">
+                    <label for="">Enter you name</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" required spellcheck="false">
+                    <label for="">Enter you Mail</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" required spellcheck="false">
+                    <label for="">Enter you Password</label>
+                </div>
+            </form>
+        </div>
+    </section>
+      </main>
+      <section>
+        <div class="Newsletter">
+          <img
+            id="nl-logo"
+            src="logo/WhatsApp Image 2024-08-04 at 11.07.10_344440d2.jpg"
+          />
+  
+          <a id="nl-pagel" href="pages/sign-up page.html">Newsletter sign-up</a>
+          <h6 class="newsletterd"><sup>*</sup>Indicate a required fields</h6>
+          <h2 class="newsletterd">Email Adress</h2>
+          <div class="newsletterd" id="nl-in-n">
+            <input id="input" type="email" placeholder="enter your mail">
+            <button id="input-btn">&#8594;</button>
+          </div>
+  
+          <div class="newsletterd" id="media-links">
+            <a href="https://www.instagram.com/stepi_fy"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=61561858725159&mibextid=ZbWKwL"
+              ><i class="fa fa-facebook-square" aria-hidden="true"></i
+            ></a>
+            <a href="https://youtube.com/@stepify.com12?si=cIvwtXOqOQg6nxD9"
+              ><i class="fa fa-youtube-square" aria-hidden="true"></i
+            ></a>
+            <a href="https://pin.it/7DqUJ0IGH"
+              ><i class="fa fa-pinterest-square" aria-hidden="true"></i
+            ></a>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <footer>
+        <section id="footer-menu">
+          <div class="footermenuheadings" id="customer-help">
+            <h1>customer help</h1>
+            <a href="contact us.html">contact us</a>
+            <a href="Delivery inf.html"
+              >Shipping Information</a
+            >
+            <a href="parivacy policy.html">Privacy Policy</a>
+            <a href="Faq.html">FAQ's</a>
+            <a href="careers.html">Careers</a>
+          </div>
+          <div class="footermenuheadings" id="customer service">
+            <h1>customer service</h1>
+            <a href="location.html">Store location</a>
+            <a href="Cheak order.html">Cheak your order Status</a>
+            <a href="return policy.html">Return Policy</a>
+            <a href="My Account.html">My Account</a>
+            <a href="feedback.html">Share your Feedback</a>
+            <a href="help page.html">Help</a>
+          </div>
+          <div class="footermenuheadings" id="Useful-info">
+            <h1>Useful info</h1>
+            <a href="about-us page.html">About Us</a>
+            <a href="promotions.html">Promotions</a>
+            <a href="paywith.html"
+              >Pay with Credit/Debit card</a
+            >
+            <a href="ordertraking.html"
+              >Order Tranking Status</a
+            >
+            <a href="ordder cancel.html">Order Cancellation</a>
+          </div>
+          <div class="footermenuheadings" id="More">
+            <h1>More</h1>
+            <a href="Subscribe to mail.html"
+              >Subscribe TO E-Mail</a
+            >
+            <a href="cookies.html">Cookies</a>
+            <a href="Acciesiblty.html">Accessibility</a>
+            <a href="bolgs.html">Blogs</a>
+          </div>
+        </section>
+      </footer>
+</body>
+</html>
